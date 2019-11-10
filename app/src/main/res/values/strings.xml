@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Hello World</string>
+    <string name="app_name">Exercise1</string>
+    <string name="input_text_box_hint">Enter message</string>
+    <string name="preview_btn_text">PREVIEW</string>
+    <string name="email_btn_text">E-MAIL</string>
+    <string name="default_preview_message">Oops&#8230; Something went totally wrong</string>
 </resources>

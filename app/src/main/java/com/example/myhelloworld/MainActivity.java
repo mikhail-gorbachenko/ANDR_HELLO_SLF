@@ -5,24 +5,30 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView duck;
-    private Button hugBtn;
+     private EditText editText; //define here not allowed by old API?
+     private Button previewBtn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        duck = (TextView) findViewById(R.id.duck);
-        hugBtn = (Button) findViewById(R.id.hugBtn);
+        editText = findViewById(R.id.edit_text);
+        previewBtn = findViewById(R.id.preview_btn);
+
+        previewBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String message = editText.getText().toString();
+                SecondActivity.start(MainActivity.this, message);
+            }
+        });
     }
 
-    public void hugTheDuck(View v){
-        duck.setText("QUACK! QUACK! QUACK!");
-        hugBtn.setVisibility(View.GONE); //What a difference between invisible and gone?
-    }
 }
