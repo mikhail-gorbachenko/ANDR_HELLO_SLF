@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Упражнение1</string>
+    <string name="default_preview_message">Упс&#8230; Что-то пошло не так.</string>
+    <string name="email_btn_text">Написать письмо</string>
+    <string name="input_text_box_hint">Введите сообщение</string>
+    <string name="preview_btn_text">Предпросмотр</string>
+</resources>

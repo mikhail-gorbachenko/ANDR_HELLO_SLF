@@ -36,7 +36,7 @@ public class SecondActivity extends AppCompatActivity {
                 intent.putExtra(Intent.EXTRA_TEXT, message);
                 if(intent.resolveActivity(getPackageManager())!=null){
                     startActivity(intent);
-                } Toast.makeText(getApplicationContext(), "there is no e-mail app", 15).show();
+                } Toast.makeText(getApplicationContext(), "there is no e-mail app", Toast.LENGTH_LONG).show();
 
             }
         });

@@ -8,12 +8,14 @@
         android:id="@+id/edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/input_text_box_hint"/>
+        android:hint="@string/input_text_box_hint"
+        android:textSize="@dimen/text_size"/>
 
     <Button
         android:id="@+id/preview_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/preview_btn_text"/>
+        android:text="@string/preview_btn_text"
+        android:textSize="@dimen/btn_text_size"/>
 
 </LinearLayout>
