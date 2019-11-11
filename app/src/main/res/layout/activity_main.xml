@@ -8,14 +8,13 @@
 
     <EditText
         android:id="@+id/edit_text"
-        android:layout_width="351dp"
-        android:layout_height="621dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="322dp"
+        android:layout_height="422dp"
         android:hint="@string/input_text_box_hint"
         android:textSize="@dimen/text_size"
         app:layout_constraintBottom_toTopOf="@+id/preview_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,7 +22,7 @@
         android:id="@+id/preview_btn"
         android:layout_width="350dp"
         android:layout_height="68dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="140dp"
         android:text="@string/preview_btn_text"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintBottom_toBottomOf="parent"
