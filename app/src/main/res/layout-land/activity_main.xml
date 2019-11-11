@@ -8,27 +8,26 @@
 
     <EditText
         android:id="@+id/edit_text"
-        android:layout_width="351dp"
-        android:layout_height="621dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="302dp"
+        android:layout_height="222dp"
+        android:layout_marginStart="32dp"
         android:hint="@string/input_text_box_hint"
         android:textSize="@dimen/text_size"
-        app:layout_constraintBottom_toTopOf="@+id/preview_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.513" />
 
     <Button
         android:id="@+id/preview_btn"
-        android:layout_width="350dp"
-        android:layout_height="68dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="358dp"
+        android:layout_height="220dp"
         android:text="@string/preview_btn_text"
         android:textSize="@dimen/btn_text_size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/edit_text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.507" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
